@@ -134,7 +134,7 @@ button::-moz-focus-inner {
 }
 .wrapper {
 	position:relative;
-	min-width:1114px;
+	min-width:1134px;
 	min-height:100%;
 	margin:0 auto;
 }
@@ -313,7 +313,6 @@ header.fixed > div > div {
 .slider > div .temp {
 	display:none;
 }
-
 section {
 	position:relative;
 	border-bottom:1px solid #eaeaea;
@@ -322,7 +321,7 @@ section > div {
 	clear:both;
 	overflow:hidden;
 	width:1074px;
-	padding:78px 20px 66px;
+	padding:78px 30px 66px;
 	margin:0 auto;
 }
 section .picture {

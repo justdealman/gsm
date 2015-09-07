@@ -88,7 +88,7 @@ $(document).ready(function() {
 		$('html, body').stop().animate({
 			scrollTop: 0
 		}, 1000);
-		event.preventDefaut();
+		event.preventDefault();
 	});
 	$('.color li span').each(function() {
 		$(this).css({
@@ -107,6 +107,19 @@ $(document).ready(function() {
 		event.preventDefault();
 	});
 	$('.model li:first-child').trigger('click');
+	$('.modal').append('<span class="close"></span>');
+	$('[data-open]').bind('click', function() {
+		var t = $('.modal[data-target="'+$(this).attr('data-open')+'"]');
+		t.css({
+			'margin-top': -t.outerHeight()/2+'px'
+		}).stop().fadeIn(250);
+		$('.fade').stop().fadeIn(250);
+		event.preventDefault();
+	});
+	$('.modal .close, .fade').bind('click', function() {
+		$('.modal, .fade').stop().fadeOut(250);
+		event.preventDefault();
+	});
 });
 $(window).resize(function() {
 	if ( $('.slider').length > 0 ) {

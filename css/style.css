@@ -187,10 +187,10 @@ header ul li a {
 	line-height:19px;
 	font-weight:300;
 	padding:10px 11px;
-	transition:all 0.5s ease-in-out;
-	-webkit-transition:all 0.5s ease-in-out;
-	-moz-transition:all 0.5s ease-in-out;
-	-o-transition:all 0.5s ease-in-out;
+	transition:padding 0.5s ease-in-out;
+	-webkit-transition:padding 0.5s ease-in-out;
+	-moz-transition:padding 0.5s ease-in-out;
+	-o-transition:padding 0.5s ease-in-out;
 }
 header ul li.active a {
 	color:#99d83f;
